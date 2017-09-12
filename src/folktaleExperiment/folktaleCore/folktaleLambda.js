@@ -1,10 +1,10 @@
 const {
-  compose,
-  partialize,
+  compose, // Compose two functions
+  partialize, // Make a function capable of partial apply
   partialize: {
-    hole: _
+    hole: _ // Used to specify not used parameters in partial appy
   },
-  curry
+  curry // Transform a normal function in a curried function
 } = require('folktale/core/lambda');
 
 const add = (x, y) => x + y;
