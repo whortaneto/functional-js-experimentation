@@ -1,0 +1,4 @@
+- folktale lambda seems very interesting for the compose and curry functions but the API from partialize seems odd.
+- folktale object seems interesting oly if you are writing pure javascript...immutable ftw.
+- folktale maybe is very importante to functional javascript but I think that it can be very easily replaced.
+- the fp eslint plugins is awesome, it realy make your javascript more functional.
