@@ -17,8 +17,14 @@ const resultFail = resultedMaybeFail.getOrElse('Not finded'); // Receive the def
 resultOk // eslint-disable-line
 resultFail // eslint-disable-line
 
-const transformedResultOk = resultedMaybeOk.map(i => i + 1);
+const transformedResultOk = resultedMaybeOk.map(i => i + 1); // keeping wrapped (functor)
 const transformedResultFail = resultedMaybeFail.map(i => i + 1);
 
 transformedResultOk // eslint-disable-line
 transformedResultFail // eslint-disable-line
+
+const unwrappedMapOk = resultedMaybeOk.chain(i => i + 1); // maps and unwrap from maybe (monad)
+const unwrappedMapFail = resultedMaybeFail.chain(i => i + 1);
+
+unwrappedMapOk // eslint-disable-line
+unwrappedMapFail // eslint-disable-line
